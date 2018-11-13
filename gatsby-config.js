@@ -30,5 +30,13 @@ module.exports = {
     // 'gatsby-plugin-offline',
     // ADD YOUR PLUGINS HERE
     'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
   ],
 }
