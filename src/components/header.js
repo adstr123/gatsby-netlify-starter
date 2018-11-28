@@ -1,31 +1,32 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import styles from '../css/header.module.sass'
+
+const Header = ({ businessName }) => (
+  <div className={styles.container}>
+    <div className={styles.wrapper}>
+    
+      <div className={styles.nav}>
+        <ul className={styles.nav__left}>
+          <li><Link to="/apparel" className={styles.link}>Apparel</Link></li>
+          <li><Link to="/leatherwear" className={styles.link}>Leatherwear</Link></li>
+          <li><Link to="/adornments" className={styles.link}>Adornments</Link></li>
+        </ul>
+        <div className={styles.nav__center}>
+          <h1 className={styles.name__cont}>
+            <Link to="/" className={styles.name__link}>{businessName}</Link>
+          </h1>
+        </div>
+        <div className={styles.nav__right}>
+          <Link to="/" className={styles.link}>Blog</Link>
+          <Link to="/" className={styles.link}>Our Story</Link>
+          <Link to="/" className={styles.link}>Search</Link>
+          <Link to="/" className={styles.link}>Profile</Link>
+          <Link to="/" className={styles.link}>Cart</Link>
+        </div>
+      </div>
+
     </div>
   </div>
 )

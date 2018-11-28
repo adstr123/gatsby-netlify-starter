@@ -21,8 +21,6 @@ exports.createPages = ({ graphql, actions }) => {
         console.log(result.errors)
         reject(result.errors)
       }
-      // log returned data
-      console.log(result.data.allMarkdownRemark.edges[0]);
       // create pages
       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({

@@ -1,0 +1,47 @@
+@import './var.sass'
+@import './font.sass'
+
+.container
+  background-color: $blueGrey
+  border-bottom: solid 6px $orange
+
+.wrapper
+  margin: 'auto'
+  maxWidth: 1920
+
+// set padding & height
+.nav
+  display: flex
+  flex-direction: row
+  height: 140px
+  padding-left: 60px
+  padding-right: 60px
+
+// distribute 3 containers evenly with flex: 1 & justify-content despite different  individual widths
+%subnav
+  flex: 1
+  display: flex
+  align-items: center
+  list-style: none
+  
+.nav__left
+  @extend %subnav
+  justify-content: flex-start
+
+.nav__center
+  @extend %subnav
+  justify-content: center
+
+.nav__right
+  @extend %subnav
+  justify-content: flex-end
+
+.link
+  font-size: 14px
+  color: $offWhite
+  font-family: $roboto-mono
+  text-transform: uppercase
+  margin-right: 25px
+
+.name__link
+  color: $gold

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Bone Idol',
+    title: 'Luxury dog clothing and accessories - Bone Idol Originals',
+    businessName: 'Bone Idol',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
