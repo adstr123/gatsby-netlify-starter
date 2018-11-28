@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Bone Idol',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -29,6 +29,14 @@ module.exports = {
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
     // ADD YOUR PLUGINS HERE
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+          name: `src`,
+          path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-sass`,
