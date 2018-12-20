@@ -1,16 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
 
-import Layout from '../components/layout'
-import Image from '../components/image'
+import Layout from '../components/layout';
+import HeroImage from '../components/heroImage';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi Noughts & Ones</h1>
-    <p>Welcome to your new Gatsby Bone Idol site.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
+    <div id="content"><HeroImage /></div>
   </Layout>
 )
 
