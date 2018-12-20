@@ -1,5 +1,5 @@
 ---
-slug: /the-burlington
+slug: /the-burlington-2
 title: The Burlington 2
 category: apparel
 ---
