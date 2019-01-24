@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import logo from '../images/assets/logo.svg'
+
 import styles from '../css/header.module.sass'
 
-const Header = ({ businessName }) => (
+const Header = () => (
   <div className={styles.container}>
     <div className={styles.wrapper}>
     
@@ -14,9 +16,7 @@ const Header = ({ businessName }) => (
           <li><Link to="/adornments" className={styles.link}>Adornments</Link></li>
         </ul>
         <div className={styles.nav__center}>
-          <h1 className={styles.name__cont}>
-            <Link to="/" className={styles.name__link}>{businessName}</Link>
-          </h1>
+          <Link to="/" className={styles.logo}><img src={logo} alt="Bone Idol logo"/></Link>
         </div>
         <div className={styles.nav__right}>
           <Link to="/" className={styles.link}>Blog</Link>

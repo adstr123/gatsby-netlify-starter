@@ -24,7 +24,7 @@ const HeroImage = () => (
     `}
     render={data => <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
-        style={{maxHeight: `calc(90vh - 140px)`}}
+        style={{maxHeight: `calc(100vh - 140px)`}}
       />}
   />
 )

@@ -10,7 +10,14 @@
   max-width: 1400px
   font-size: 14px
 
-.columnsWrapper
+.wrapper-grid
+  display: grid
+
+.wrapper-grid-4
+  @extend .wrapper-grid
+  grid-template-columns: repeat(4, 1fr)
+
+.grid-item
 
 .copyright
   font-family: $roboto-mono
