@@ -15,3 +15,12 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+  - name: product
+    label: Product
+    folder: /static/products
+    create: true
+    fields:
+      - { name: slug, label: URL Slug }
+      - { name: title, label: Title }
+      - { name: category, label: Category }
+      - { name: body, label: Body, widget: markdown }
