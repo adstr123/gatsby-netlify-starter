@@ -1,22 +1,31 @@
 <p align="center">
   <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="/src/images/assets/logo.svg" width="150" />
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Bone Idol // Netlify
+  GatsbyJS // Netlify
 </h1>
 
-This project is a replication of [Bone Idol Originals](https://bone-idol.com) built with GatsbyJS (React) & deployed using Netlify.
+This project is similar to the default [Gatsby starter](https://github.com/gatsbyjs/gatsby-starter-default) with a few additions that make it easier to use with [Netlify](https://www.netlify.com/) (plus a few extras that are commonly used in modern web dev workflows).
 
 ## 🚀 Quick start
+
+1.  **Create a Gatsby site.**
+
+    Use the Gatsby CLI to create a new site, specifying this starter.
+
+    ```sh
+    # create a new Gatsby site using this starter
+    npx gatsby new my-netlify-starter https://github.com/adstr123/gatsby-netlify-starter
+    ```
 
 1.  **Start the development site.**
 
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-default-starter/
+    cd my-netlify-starter/
     gatsby develop
     ```
 
@@ -25,6 +34,14 @@ This project is a replication of [Bone Idol Originals](https://bone-idol.com) bu
     The site is now running at `http://localhost:8000`!
     
     *Note: a second link `http://localhost:8000/___graphql` provides access to a tool you can use to experiment with querying data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
+    
+## How does this starter extend the default one?
+
+1. It adds & configures the [netlify-cms](https://www.netlifycms.org/) as a backend, accessible by accessing `http://localhost:8000/admin`
+
+2. It integrates programmatic page generation from markdown (.md) files. It configures this with the previously setup netlify-cms in order to accept admin-submitted content, and create pages from them. At the moment, this content goes to the 'products' folder but this is likely to change in the future as it is generalised away from e-commerce.
+
+3. It configures a few additions, such as enabling SASS and disabling CSS module automatic camelcasing.
     
 ## 🧐 What's inside?
 
@@ -47,7 +64,7 @@ This project is a replication of [Bone Idol Originals](https://bone-idol.com) bu
   
   2.  **`/src`**: This directory contains all of the code related to what you will see on the front-end of the site.
   
-  3.  **`/src`**: This is where some static resources are located, such as the code for the admin console ([netlify-cms](https://www.netlifycms.org/).
+  3.  **`/admin`**: This is where some static resources are located, such as the code for the admin console ([netlify-cms](https://www.netlifycms.org/).
   
   4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
   
