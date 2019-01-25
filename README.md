@@ -37,7 +37,7 @@ This project is similar to the default [Gatsby starter](https://github.com/gatsb
     
 ## How does this starter extend the default one?
 
-1. It adds & configures the [netlify-cms](https://www.netlifycms.org/) as a backend, accessible by accessing `http://localhost:8000/admin`
+1. It adds & configures the [netlify-cms](https://www.netlifycms.org/) as a backend, accessible by accessing `http://localhost:8000/admin`. **You will still need to authorise the Netlify app in your github repo, and configure the repo settings in gatsby-config.js.** Otherwise you will not be authorised to log in as an administrator.
 
 2. It integrates programmatic page generation from markdown (.md) files. It configures this with the previously setup netlify-cms in order to accept admin-submitted content, and create pages from them. At the moment, this content goes to the 'products' folder but this is likely to change in the future as it is generalised away from e-commerce.
 

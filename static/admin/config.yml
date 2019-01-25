@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: adstr123/bi-replicate
+  repo: adstr123/gatsby-netlify-starter
 
 media_folder: "src/images"
 public_folder: "/images"

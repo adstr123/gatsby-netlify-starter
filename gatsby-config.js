@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Luxury dog clothing and accessories - Bone Idol Originals',
-    businessName: 'Bone Idol',
+    title: 'Gatsby Netlify Starter',
+    businessName: 'adstr123',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
